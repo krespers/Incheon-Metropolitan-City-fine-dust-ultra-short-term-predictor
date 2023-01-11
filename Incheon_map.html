@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c63467fac77a4e05a175d9511febb1ad {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c63467fac77a4e05a175d9511febb1ad" ></div>
+        
+</body>
+<script>    
+    
+            var map_c63467fac77a4e05a175d9511febb1ad = L.map(
+                "map_c63467fac77a4e05a175d9511febb1ad",
+                {
+                    center: [37.4483454, 126.694595],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6c4a1f73fa254557b9564d16f2bd7e5b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var marker_e705568a60744d5f9735f8d364860caf = L.marker(
+                [37.964738, 124.634011],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_987606fe58af4699ba1a5160c2a6ef6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e705568a60744d5f9735f8d364860caf.setIcon(icon_987606fe58af4699ba1a5160c2a6ef6b);
+        
+    
+        var popup_ec56190d4507483ea80eef31a40c1f3b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcdac8b718f1439bb79328b32d55f616 = $(`<div id="html_dcdac8b718f1439bb79328b32d55f616" style="width: 100.0%; height: 100.0%;">백령도 관측점</div>`)[0];
+            popup_ec56190d4507483ea80eef31a40c1f3b.setContent(html_dcdac8b718f1439bb79328b32d55f616);
+        
+
+        marker_e705568a60744d5f9735f8d364860caf.bindPopup(popup_ec56190d4507483ea80eef31a40c1f3b)
+        ;
+
+        
+    
+    
+            var marker_7c2f4d029636478fa3c2904a6c7cfb73 = L.marker(
+                [37.233041, 126.149283],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_f5b732c6c67546b9b29d2d22aac5b2c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7c2f4d029636478fa3c2904a6c7cfb73.setIcon(icon_f5b732c6c67546b9b29d2d22aac5b2c5);
+        
+    
+        var popup_6c90239c0b8a4e51b50de50d94807af9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8e1a8123cb3e446880e510c4aa0ff31b = $(`<div id="html_8e1a8123cb3e446880e510c4aa0ff31b" style="width: 100.0%; height: 100.0%;">덕적도 관측점</div>`)[0];
+            popup_6c90239c0b8a4e51b50de50d94807af9.setContent(html_8e1a8123cb3e446880e510c4aa0ff31b);
+        
+
+        marker_7c2f4d029636478fa3c2904a6c7cfb73.bindPopup(popup_6c90239c0b8a4e51b50de50d94807af9)
+        ;
+
+        
+    
+    
+            var marker_4735eecbd3354c828b34a9596e41719f = L.marker(
+                [37.710051, 126.271619],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_98878bf3edc84adf883ea34c48fcd628 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4735eecbd3354c828b34a9596e41719f.setIcon(icon_98878bf3edc84adf883ea34c48fcd628);
+        
+    
+        var popup_ef0ce6a3250d458d9f6e199712e3d0e3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa0072fc986b466e9d388ed3e41e7776 = $(`<div id="html_fa0072fc986b466e9d388ed3e41e7776" style="width: 100.0%; height: 100.0%;">석모리 관측점</div>`)[0];
+            popup_ef0ce6a3250d458d9f6e199712e3d0e3.setContent(html_fa0072fc986b466e9d388ed3e41e7776);
+        
+
+        marker_4735eecbd3354c828b34a9596e41719f.bindPopup(popup_ef0ce6a3250d458d9f6e199712e3d0e3)
+        ;
+
+        
+    
+    
+            var marker_db214482aab5458788d2693abc3a7ca5 = L.marker(
+                [37.602125, 126.661277],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_4ed16a79feba4c95b2c51fecc723c83f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_db214482aab5458788d2693abc3a7ca5.setIcon(icon_4ed16a79feba4c95b2c51fecc723c83f);
+        
+    
+        var popup_14b9382f3d23438daa9b3d631e0a77fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_baa198f0c1274eb897f6b0c775973843 = $(`<div id="html_baa198f0c1274eb897f6b0c775973843" style="width: 100.0%; height: 100.0%;">검단 관측점</div>`)[0];
+            popup_14b9382f3d23438daa9b3d631e0a77fc.setContent(html_baa198f0c1274eb897f6b0c775973843);
+        
+
+        marker_db214482aab5458788d2693abc3a7ca5.bindPopup(popup_14b9382f3d23438daa9b3d631e0a77fc)
+        ;
+
+        
+    
+    
+            var marker_2ac3bff8d36e4c2ab1a3b55bc7ed34d6 = L.marker(
+                [37.545997, 126.730061],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_59aa4a367e244564af8cf24d5090d35a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_2ac3bff8d36e4c2ab1a3b55bc7ed34d6.setIcon(icon_59aa4a367e244564af8cf24d5090d35a);
+        
+    
+        var popup_e32b9e811d23498ca8cd9d5aeebb8640 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c0e906da6e7a4f87867277d07be31cbb = $(`<div id="html_c0e906da6e7a4f87867277d07be31cbb" style="width: 100.0%; height: 100.0%;">계산 관측점</div>`)[0];
+            popup_e32b9e811d23498ca8cd9d5aeebb8640.setContent(html_c0e906da6e7a4f87867277d07be31cbb);
+        
+
+        marker_2ac3bff8d36e4c2ab1a3b55bc7ed34d6.bindPopup(popup_e32b9e811d23498ca8cd9d5aeebb8640)
+        ;
+
+        
+    
+    
+            var marker_526f37e4ffa3460f938eb3596b82d289 = L.marker(
+                [37.409124, 126.699817],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_bfc1295dc6ec40588ffda982b536a7fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_526f37e4ffa3460f938eb3596b82d289.setIcon(icon_bfc1295dc6ec40588ffda982b536a7fd);
+        
+    
+        var popup_761605b2002c4292aa7bab5938b3e01a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fc44360ab104906a13ae44e926d9c06 = $(`<div id="html_7fc44360ab104906a13ae44e926d9c06" style="width: 100.0%; height: 100.0%;">고잔 관측점</div>`)[0];
+            popup_761605b2002c4292aa7bab5938b3e01a.setContent(html_7fc44360ab104906a13ae44e926d9c06);
+        
+
+        marker_526f37e4ffa3460f938eb3596b82d289.bindPopup(popup_761605b2002c4292aa7bab5938b3e01a)
+        ;
+
+        
+    
+    
+            var marker_dec76bfe209249499ef4c161abef1ea5 = L.marker(
+                [37.640861, 126.490987],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_991c1690d8d6410d81e111350d5970f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_dec76bfe209249499ef4c161abef1ea5.setIcon(icon_991c1690d8d6410d81e111350d5970f5);
+        
+    
+        var popup_16f45f73e57b4554a07bce31c1389e43 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6d7cb815404c4e53b7f9e9c860db29cb = $(`<div id="html_6d7cb815404c4e53b7f9e9c860db29cb" style="width: 100.0%; height: 100.0%;">길상 관측점</div>`)[0];
+            popup_16f45f73e57b4554a07bce31c1389e43.setContent(html_6d7cb815404c4e53b7f9e9c860db29cb);
+        
+
+        marker_dec76bfe209249499ef4c161abef1ea5.bindPopup(popup_16f45f73e57b4554a07bce31c1389e43)
+        ;
+
+        
+    
+    
+            var marker_76851152fa674dcb95cd049171a579a3 = L.marker(
+                [37.403472, 126.72721],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_8d736dd99abd4969a5ff2e3c7837212a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_76851152fa674dcb95cd049171a579a3.setIcon(icon_8d736dd99abd4969a5ff2e3c7837212a);
+        
+    
+        var popup_4f1d47f1ecd443cf84bd30717297c397 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7119a810a7d94357bff0f11bde3ad1ab = $(`<div id="html_7119a810a7d94357bff0f11bde3ad1ab" style="width: 100.0%; height: 100.0%;">논현 관측점</div>`)[0];
+            popup_4f1d47f1ecd443cf84bd30717297c397.setContent(html_7119a810a7d94357bff0f11bde3ad1ab);
+        
+
+        marker_76851152fa674dcb95cd049171a579a3.bindPopup(popup_4f1d47f1ecd443cf84bd30717297c397)
+        ;
+
+        
+    
+    
+            var marker_773c2167dddf45358bf52409c8b8665c = L.marker(
+                [37.409468, 126.678282],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_4ca4227aaf174b1ba7e95ac490404cfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_773c2167dddf45358bf52409c8b8665c.setIcon(icon_4ca4227aaf174b1ba7e95ac490404cfb);
+        
+    
+        var popup_8bac9eb0d2eb4ff1b76f5e0d3ac0a0d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55aec402fe7e49d586976a943bef8a20 = $(`<div id="html_55aec402fe7e49d586976a943bef8a20" style="width: 100.0%; height: 100.0%;">동춘 관측점</div>`)[0];
+            popup_8bac9eb0d2eb4ff1b76f5e0d3ac0a0d9.setContent(html_55aec402fe7e49d586976a943bef8a20);
+        
+
+        marker_773c2167dddf45358bf52409c8b8665c.bindPopup(popup_8bac9eb0d2eb4ff1b76f5e0d3ac0a0d9)
+        ;
+
+        
+    
+    
+            var marker_4bb2d7b9033541968362dd710cc514b1 = L.marker(
+                [37.499703, 126.723768],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_e85d505eb3db4b10a0aed864fa19c941 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_4bb2d7b9033541968362dd710cc514b1.setIcon(icon_e85d505eb3db4b10a0aed864fa19c941);
+        
+    
+        var popup_5e3c74498a1c4307bf499ff3007d92c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9e4efd2f0924865865cff3067c3c97b = $(`<div id="html_d9e4efd2f0924865865cff3067c3c97b" style="width: 100.0%; height: 100.0%;">부평 관측점</div>`)[0];
+            popup_5e3c74498a1c4307bf499ff3007d92c5.setContent(html_d9e4efd2f0924865865cff3067c3c97b);
+        
+
+        marker_4bb2d7b9033541968362dd710cc514b1.bindPopup(popup_5e3c74498a1c4307bf499ff3007d92c5)
+        ;
+
+        
+    
+    
+            var marker_d8c9f3e8713d49dab6277e40bd960464 = L.marker(
+                [37.513137, 126.736272],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_e182a1b7aacc414784a7040e1510e5b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_d8c9f3e8713d49dab6277e40bd960464.setIcon(icon_e182a1b7aacc414784a7040e1510e5b9);
+        
+    
+        var popup_b8f1a3ae9b0d4f048d012f7c75b3540a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ecd244579e9842bba3253a65008f1b91 = $(`<div id="html_ecd244579e9842bba3253a65008f1b91" style="width: 100.0%; height: 100.0%;">삼산 관측점</div>`)[0];
+            popup_b8f1a3ae9b0d4f048d012f7c75b3540a.setContent(html_ecd244579e9842bba3253a65008f1b91);
+        
+
+        marker_d8c9f3e8713d49dab6277e40bd960464.bindPopup(popup_b8f1a3ae9b0d4f048d012f7c75b3540a)
+        ;
+
+        
+    
+    
+            var marker_4c23213a05e442d98b10c64adf5d7a85 = L.marker(
+                [37.502646, 126.674612],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_e293bc47d44c4319a93a99bbecf28d85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_4c23213a05e442d98b10c64adf5d7a85.setIcon(icon_e293bc47d44c4319a93a99bbecf28d85);
+        
+    
+        var popup_7b4e20db03b54cb2951f9ee5af5b1a84 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_18af1c003d9c4c64a305b9b5bc796a8d = $(`<div id="html_18af1c003d9c4c64a305b9b5bc796a8d" style="width: 100.0%; height: 100.0%;">석남 관측점</div>`)[0];
+            popup_7b4e20db03b54cb2951f9ee5af5b1a84.setContent(html_18af1c003d9c4c64a305b9b5bc796a8d);
+        
+
+        marker_4c23213a05e442d98b10c64adf5d7a85.bindPopup(popup_7b4e20db03b54cb2951f9ee5af5b1a84)
+        ;
+
+        
+    
+    
+            var marker_803764bba0b64ae39a8cb9b08a0c51ab = L.marker(
+                [37.38213, 126.654754],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_516a95ca4359442a9c6e9c4e4009009c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_803764bba0b64ae39a8cb9b08a0c51ab.setIcon(icon_516a95ca4359442a9c6e9c4e4009009c);
+        
+    
+        var popup_5c47523cc9dd466b9980ab4bf70db021 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c75edc024ad042aa8a43af20f5ddca39 = $(`<div id="html_c75edc024ad042aa8a43af20f5ddca39" style="width: 100.0%; height: 100.0%;">송도 관측점</div>`)[0];
+            popup_5c47523cc9dd466b9980ab4bf70db021.setContent(html_c75edc024ad042aa8a43af20f5ddca39);
+        
+
+        marker_803764bba0b64ae39a8cb9b08a0c51ab.bindPopup(popup_5c47523cc9dd466b9980ab4bf70db021)
+        ;
+
+        
+    
+    
+            var marker_f627a580f6444cff8bdeb54d3795b77b = L.marker(
+                [37.473815, 126.643195],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_10174a11bbad479287acf411ead7ffce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f627a580f6444cff8bdeb54d3795b77b.setIcon(icon_10174a11bbad479287acf411ead7ffce);
+        
+    
+        var popup_167d967665f647efae2116df8d556d3a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_737b811988ff49119fc6a84a6c4328b8 = $(`<div id="html_737b811988ff49119fc6a84a6c4328b8" style="width: 100.0%; height: 100.0%;">송림 관측점</div>`)[0];
+            popup_167d967665f647efae2116df8d556d3a.setContent(html_737b811988ff49119fc6a84a6c4328b8);
+        
+
+        marker_f627a580f6444cff8bdeb54d3795b77b.bindPopup(popup_167d967665f647efae2116df8d556d3a)
+        ;
+
+        
+    
+    
+            var marker_b5e6c77624c548e0af4e362c7adaab17 = L.marker(
+                [37.764529, 126.46392],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_7c3ff29ac4e94a90aa2903191706476a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_b5e6c77624c548e0af4e362c7adaab17.setIcon(icon_7c3ff29ac4e94a90aa2903191706476a);
+        
+    
+        var popup_b5806a5b31ac4616a7ca936414d002b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dcbcc34bd8e4c9080154b5a23d25cce = $(`<div id="html_8dcbcc34bd8e4c9080154b5a23d25cce" style="width: 100.0%; height: 100.0%;">송해 관측점</div>`)[0];
+            popup_b5806a5b31ac4616a7ca936414d002b5.setContent(html_8dcbcc34bd8e4c9080154b5a23d25cce);
+        
+
+        marker_b5e6c77624c548e0af4e362c7adaab17.bindPopup(popup_b5806a5b31ac4616a7ca936414d002b5)
+        ;
+
+        
+    
+    
+            var marker_4bcde3687336484dae708ccecd1072ea = L.marker(
+                [37.4594, 126.657249],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_9023313cf66d4fb8964d19a4a034710f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_4bcde3687336484dae708ccecd1072ea.setIcon(icon_9023313cf66d4fb8964d19a4a034710f);
+        
+    
+        var popup_0b7641cd490f4752aa3aba3e8197a73a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06120850c77b4afe84bdb7fcbd577c33 = $(`<div id="html_06120850c77b4afe84bdb7fcbd577c33" style="width: 100.0%; height: 100.0%;">숭의 관측점</div>`)[0];
+            popup_0b7641cd490f4752aa3aba3e8197a73a.setContent(html_06120850c77b4afe84bdb7fcbd577c33);
+        
+
+        marker_4bcde3687336484dae708ccecd1072ea.bindPopup(popup_0b7641cd490f4752aa3aba3e8197a73a)
+        ;
+
+        
+    
+    
+            var marker_22611bee1356424ca04e3acf4a7fe7e8 = L.marker(
+                [37.468018, 126.63504],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_a96162db50f84a578b50bdbcc8b6c9cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_22611bee1356424ca04e3acf4a7fe7e8.setIcon(icon_a96162db50f84a578b50bdbcc8b6c9cc);
+        
+    
+        var popup_c9b277defc1d4347aae97703323ea2bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d7bf1a45e6747f38a73ae21709792b0 = $(`<div id="html_5d7bf1a45e6747f38a73ae21709792b0" style="width: 100.0%; height: 100.0%;">신흥 관측점</div>`)[0];
+            popup_c9b277defc1d4347aae97703323ea2bd.setContent(html_5d7bf1a45e6747f38a73ae21709792b0);
+        
+
+        marker_22611bee1356424ca04e3acf4a7fe7e8.bindPopup(popup_c9b277defc1d4347aae97703323ea2bd)
+        ;
+
+        
+    
+    
+            var marker_b8d1b7b5fbae4dcdb43543f1bedc39a3 = L.marker(
+                [37.5416, 126.681218],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_98f1443a502047a8ade7d6b354238753 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_b8d1b7b5fbae4dcdb43543f1bedc39a3.setIcon(icon_98f1443a502047a8ade7d6b354238753);
+        
+    
+        var popup_59d65fd45c8b405f96cc98d1b065ba01 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b028813266ef4d3ba729fdad6b165a20 = $(`<div id="html_b028813266ef4d3ba729fdad6b165a20" style="width: 100.0%; height: 100.0%;">연희 관측점</div>`)[0];
+            popup_59d65fd45c8b405f96cc98d1b065ba01.setContent(html_b028813266ef4d3ba729fdad6b165a20);
+        
+
+        marker_b8d1b7b5fbae4dcdb43543f1bedc39a3.bindPopup(popup_59d65fd45c8b405f96cc98d1b065ba01)
+        ;
+
+        
+    
+    
+            var marker_f53dab1588304f47bfcc9e90f13ccb70 = L.marker(
+                [37.256002, 126.483283],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_4309777f0d1046b7a7024bf351ec1fa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_f53dab1588304f47bfcc9e90f13ccb70.setIcon(icon_4309777f0d1046b7a7024bf351ec1fa3);
+        
+    
+        var popup_7afbdac53ee6499fb186eebac7aed7e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c1515353bae4d1a8bca17eb45ba8a71 = $(`<div id="html_3c1515353bae4d1a8bca17eb45ba8a71" style="width: 100.0%; height: 100.0%;">영흥 관측점</div>`)[0];
+            popup_7afbdac53ee6499fb186eebac7aed7e9.setContent(html_3c1515353bae4d1a8bca17eb45ba8a71);
+        
+
+        marker_f53dab1588304f47bfcc9e90f13ccb70.bindPopup(popup_7afbdac53ee6499fb186eebac7aed7e9)
+        ;
+
+        
+    
+    
+            var marker_ea116f89a6974ea4ad8626f7e5cb70cf = L.marker(
+                [37.495599, 126.488692],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_6c062900ceb2452f9e01fb475271111e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ea116f89a6974ea4ad8626f7e5cb70cf.setIcon(icon_6c062900ceb2452f9e01fb475271111e);
+        
+    
+        var popup_bb35337737e743fe957fe6f45d9bacb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2692aa559dba4a4687dfa03fa1e6f2ff = $(`<div id="html_2692aa559dba4a4687dfa03fa1e6f2ff" style="width: 100.0%; height: 100.0%;">운서 관측점</div>`)[0];
+            popup_bb35337737e743fe957fe6f45d9bacb4.setContent(html_2692aa559dba4a4687dfa03fa1e6f2ff);
+        
+
+        marker_ea116f89a6974ea4ad8626f7e5cb70cf.bindPopup(popup_bb35337737e743fe957fe6f45d9bacb4)
+        ;
+
+        
+    
+    
+            var marker_c33319610b2340719048597bc27e809a = L.marker(
+                [37.594362, 126.698586],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_e500178247fc49e380362d3841ba8791 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_c33319610b2340719048597bc27e809a.setIcon(icon_e500178247fc49e380362d3841ba8791);
+        
+    
+        var popup_44bf0982398c43529ba72c080b931c17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6a491953126483682e614f65b12e534 = $(`<div id="html_c6a491953126483682e614f65b12e534" style="width: 100.0%; height: 100.0%;">원당 관측점</div>`)[0];
+            popup_44bf0982398c43529ba72c080b931c17.setContent(html_c6a491953126483682e614f65b12e534);
+        
+
+        marker_c33319610b2340719048597bc27e809a.bindPopup(popup_44bf0982398c43529ba72c080b931c17)
+        ;
+
+        
+    
+    
+            var marker_373c8d1347c44c469006e3feea11e6e5 = L.marker(
+                [37.528196, 126.634897],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_9cf9b3249abd4c168f9422b9f17f9405 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_373c8d1347c44c469006e3feea11e6e5.setIcon(icon_9cf9b3249abd4c168f9422b9f17f9405);
+        
+    
+        var popup_cd856e0985f14e139e5efec3c23d79fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_174c39d153cb4a038be4fed5cd1dbfb4 = $(`<div id="html_174c39d153cb4a038be4fed5cd1dbfb4" style="width: 100.0%; height: 100.0%;">청라 관측점</div>`)[0];
+            popup_cd856e0985f14e139e5efec3c23d79fb.setContent(html_174c39d153cb4a038be4fed5cd1dbfb4);
+        
+
+        marker_373c8d1347c44c469006e3feea11e6e5.bindPopup(popup_cd856e0985f14e139e5efec3c23d79fb)
+        ;
+
+        
+    
+    
+            var marker_baf06cc01b4b478b9a844635a0eabe5a = L.marker(
+                [37.442172, 126.707263],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_eeca143dd61741e3b776279318ec80cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_baf06cc01b4b478b9a844635a0eabe5a.setIcon(icon_eeca143dd61741e3b776279318ec80cf);
+        
+    
+        var popup_133c8c18803b4e3face9e8ca8db66cd2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b31cde22c6224e27ab04a888e20540eb = $(`<div id="html_b31cde22c6224e27ab04a888e20540eb" style="width: 100.0%; height: 100.0%;">남동 관측점</div>`)[0];
+            popup_133c8c18803b4e3face9e8ca8db66cd2.setContent(html_b31cde22c6224e27ab04a888e20540eb);
+        
+
+        marker_baf06cc01b4b478b9a844635a0eabe5a.bindPopup(popup_133c8c18803b4e3face9e8ca8db66cd2)
+        ;
+
+        
+    
+    
+            var marker_48b6591070ec405ca110727b5b919aaf = L.marker(
+                [37.491098, 126.723769],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_09a0a4996c0a49c89e9e2f79c9d3e381 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_48b6591070ec405ca110727b5b919aaf.setIcon(icon_09a0a4996c0a49c89e9e2f79c9d3e381);
+        
+    
+        var popup_3ee577fd8a9e4c74ad3a8cf08ddd9da0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb51b7267a8845e586136614ae0b7544 = $(`<div id="html_bb51b7267a8845e586136614ae0b7544" style="width: 100.0%; height: 100.0%;">부평역 관측점</div>`)[0];
+            popup_3ee577fd8a9e4c74ad3a8cf08ddd9da0.setContent(html_bb51b7267a8845e586136614ae0b7544);
+        
+
+        marker_48b6591070ec405ca110727b5b919aaf.bindPopup(popup_3ee577fd8a9e4c74ad3a8cf08ddd9da0)
+        ;
+
+        
+    
+    
+            var marker_e5a03564349e456eb3010e95de505317 = L.marker(
+                [37.457983, 126.691088],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_63b0aed0c547407595eee3f154bb409e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e5a03564349e456eb3010e95de505317.setIcon(icon_63b0aed0c547407595eee3f154bb409e);
+        
+    
+        var popup_55ba80a5cfa54a7c9ba12698c6c31a44 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f6f37da8deb4d92b0a247f9db45bff9 = $(`<div id="html_6f6f37da8deb4d92b0a247f9db45bff9" style="width: 100.0%; height: 100.0%;">석바위 관측점</div>`)[0];
+            popup_55ba80a5cfa54a7c9ba12698c6c31a44.setContent(html_6f6f37da8deb4d92b0a247f9db45bff9);
+        
+
+        marker_e5a03564349e456eb3010e95de505317.bindPopup(popup_55ba80a5cfa54a7c9ba12698c6c31a44)
+        ;
+
+        
+    
+    
+            var marker_289a9cfe3716430ba7142002053e3da8 = L.marker(
+                [37.482121, 126.636983],
+                {}
+            ).addTo(map_c63467fac77a4e05a175d9511febb1ad);
+        
+    
+            var icon_d488170bf51d47ba9209232dc012a006 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_289a9cfe3716430ba7142002053e3da8.setIcon(icon_d488170bf51d47ba9209232dc012a006);
+        
+    
+        var popup_cc18a1888c7948be893ab36faea351cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a888f3a40dc0437cbe13743a5aed51c8 = $(`<div id="html_a888f3a40dc0437cbe13743a5aed51c8" style="width: 100.0%; height: 100.0%;">송현 관측점</div>`)[0];
+            popup_cc18a1888c7948be893ab36faea351cf.setContent(html_a888f3a40dc0437cbe13743a5aed51c8);
+        
+
+        marker_289a9cfe3716430ba7142002053e3da8.bindPopup(popup_cc18a1888c7948be893ab36faea351cf)
+        ;
+
+        
+    
+</script>
